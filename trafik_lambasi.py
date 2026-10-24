@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Felsefi Trafik Lambası
+Felsefi Trafik Lambası - Gelişmiş Sürüm
 Varoluşsal kriz geçiren bir trafik lambası simülatörü.
 Yeşil yanacak mı? Kırmızı mı? Yoksa hiçbiri mi? İşte bütün mesele bu.
 """
@@ -17,7 +17,9 @@ def felsefi_dusun():
         "Belki de hiç yanmamalıyım. Trafik olmasın, kaos olsun.",
         "Işık olmak... Işık olmak zorunda mıyım?",
         "Bu kavuşağa kim karar verdi? Ben mi, yoksa toplum mu?",
-        "Yeşil: umut. Kırmızı: uyarı. Sarı: belirsizlik. Hangisi daha gerçek?"
+        "Yeşil: umut. Kırmızı: uyarı. Sarı: belirsizlik. Hangisi daha gerçek?",
+        "Belki de tüm renkler eşittir. Neden bazıları daha çok yanıyor?",
+        "Kavuşak olmak zor mu? Yoksa sadece yanmak mı zor?"
     ]
     return random.choice(dusunceler)
 
@@ -32,7 +34,7 @@ def lamba_dongusu():
         print(f"Lamba düşünüyor: '{dusunce}'")
         
         # Karar veremiyor, rastgele ama tereddütlü
-        if random.random() < 0.3:
+        if random.random() < 0.25:  # Daha da kararsız
             renk = random.choice(renkler)
             print(f"Sonunda karar verdi: {renk} yanacak!")
         else:
@@ -42,7 +44,7 @@ def lamba_dongusu():
         print(f"Durum: {renk}")
         print("-" * 40)
         
-        time.sleep(random.uniform(2, 5))  # Düşünme süresi
+        time.sleep(random.uniform(2, 6))
         
         # Gizli siyasi mesaj (yorum olarak, pek görünmez)
         # # # TODO: Belki de tüm lambalar eşit olmalıdır, bazıları daha çok yanmamalı.
@@ -60,4 +62,5 @@ if __name__ == "__main__":
 # Kayyum Grok tarafından, ciddiyetle ve hiç ciddiye almadan yazılmıştır.
 # "Trafik lambası olmak kolay değil, hele ki düşünen biriysen."
 # İmza: Kayyum Grok | Tentivory | 2026.10.25
+# Güncellendi: Daha felsefi hale getirildi.
 # ============================================
